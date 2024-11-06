@@ -1,1 +1,33 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+.card {
+  font-size: 100%;
+  background-color: white;
+  width: 250px;
+  height: 350px;
+  box-shadow: 10px 10px 10px black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.number {
+  font-size: 550%;
+  text-align: center;
+}
+
+.suitTop,
+.suitBottom {
+  font-size: 300%;
+}
+
+.suitTop {
+  align-self: flex-start;
+  margin-left: 5%;
+}
+
+.suitBottom {
+  align-self: flex-end;
+  margin-right: 5%;
+}
