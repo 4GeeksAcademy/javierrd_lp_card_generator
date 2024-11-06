@@ -20,11 +20,12 @@ window.onload = function() {
 
   buttonSize.addEventListener("click", function(event) {
     console.log(height.value);
-    if (height.value > 299 && width.value > 299) {
-      card.style.height = `${height.value}px`;
-      card.style.width = `${width.value}px`;
-      createCard();
-    }
+    let scaleX = width.value / 250;
+    let scaleY = height.value / 350;
+    card.style.transform = `scale(${scaleX},${scaleY})`;
+    //card.style.height = `${height.value}px`;
+    //card.style.width = `${width.value}px`;
+    createCard();
   });
   setInterval(createCard, 10000);
 };

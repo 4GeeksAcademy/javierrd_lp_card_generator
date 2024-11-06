@@ -3,31 +3,36 @@ body {
   background-color: green;
 }
 .card {
-  font-size: 100%;
   background-color: white;
   width: 250px;
   height: 350px;
   box-shadow: 10px 10px 10px black;
-  display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
+  display: flex;
 }
 
 .number {
+  width: 100%;
   font-size: 550%;
   text-align: center;
 }
 
 .suitTop,
 .suitBottom {
+  width: 100%;
   font-size: 300%;
 }
 
 .suitTop {
-  align-self: flex-start;
-  margin-left: 5%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
 }
 
 .suitBottom {
-  align-self: flex-end;
-  margin-right: 5%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
 }
